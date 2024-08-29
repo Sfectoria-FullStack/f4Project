@@ -81,3 +81,133 @@
     padding-right: 10px; /* Adds space between the text and the line */
     margin-right: 20px; /* Optional: Adds space between the paragraphs and other content */
   }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Styling for the custom checkbox */
+  input[type="checkbox"]:checked {
+    background-color: rgb(212, 102, 90);
+    border-color: rgb(212, 102, 90);
+  }
+
+  /* Checkmark styling */
+  input[type="checkbox"]:checked::before {
+    content: "✓";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Style the checkbox on hover */
+  input[type="checkbox"]:hover {
+    border-color: rgb(212, 102, 90);
+  }
+
+  /* Checkbox Label Alignment */
+  .form-check-label {
+    margin-left: 8px;
+    font-size: 1.25rem;
+  }
+
+.image-salaad{
+  width: 600px;
+  height: 600px;
+}
+.script-recette{
+  max-width: 700px;
+}
+.comments{
+  width: 1000px
+}
+.rght{
+  margin-left: 250px;
+}
+.Instructions{
+  font-size: 1.25rem
+}
+.little-title{
+  font-size: 50px
+}
+.Ingredients{
+  font-size: 0.75rem
+}
+.nutrition-facts{
+  width: 500px;
+}
+.element {
+  display: block;
+}
+.caards{
+  width: 20rem
+
+}
+.image-cards{
+  height: 200px; 
+  width: 319px
+
+}
+@media (max-width: 600px) {
+    .text-custom {
+        font-size: 10px; /* Adjust font size as needed */
+        color:rgb(145, 140, 140)/* Gray pastel color */
+         /* Space between characters */
+    }
+    .image-salaad{
+      width: 200px;
+      height: 200px;
+    }
+    .script-recette{
+      max-width: 200px;
+    }
+    .yoo{
+      display: flex;
+      flex-wrap:wrap ;
+    }
+    .comments{
+    width: 300px
+    }
+    .rght{
+      margin-left: 10px;
+    }
+    .Instructions{
+      font-size: 0.75rem
+    }
+    .Ingredients{
+      font-size: 0.75rem
+    }
+    .little-title{
+      font-size: 20px
+    }
+    .nutrition-facts{
+      width: 300px;
+    }
+    .Nutriton{
+      margin-right: 20px;
+    }
+    .element {
+      display: none; 
+  }
+  .caards{
+    width: 20rem
+  
+  }
+  .image-cards{
+    height: 200px; 
+    width: 319px
+}
+} 
