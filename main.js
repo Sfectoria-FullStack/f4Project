@@ -1,9 +1,41 @@
+import photo1 from "./assets/appetizer.webp";
+import photo2 from "./assets/BBQ-Pizza.png";
+import photo3 from "./assets/breakfast.jpg";
+import photo4 from "./assets/Cesar Salad.jpeg";
+import photo5 from "./assets/Cherry-Berry Smoothie Bowl.jpg";
+import photo6 from "./assets/Chocolate Chip Cookie.jpg";
 
-const cardDiv = document.querySelectorAll('.card');
-console.log(cardDiv);
+const cardData = [
+  { photo: photo1, blog: "This is blog content 1" },
+  { photo: photo2, blog: "This is blog content 2" },
+  { photo: photo3, blog: "This is blog content 3" },
+  { photo: photo4, blog: "This is blog content 4" },
+  { photo: photo5, blog: "This is blog content 5" },
+  { photo: photo6, blog: "This is blog content 6" },
+];
 
-for (let i = 0; i < cardDiv.length; i++) {
-    cardDiv[i].addEventListener('click', () => {
-        console.log(i);
-    })
-}
+// JavaScript code to create cards...
+
+  
+  // Get the container where the cards will be inserted
+  const cardContainer = document.getElementById("card-container");
+  
+  // Loop through the card data array and create cards
+  cardData.forEach((card) => {
+    // Create a new div element for each card
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card", "m-2");
+    cardDiv.style.width = "18rem"; // Set card width
+    
+    // Create the inner HTML for each card
+    cardDiv.innerHTML = `
+      <img src="${card.photo}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">${card.blog}</p>
+      </div>
+    `;
+  
+    // Append the card to the container
+    cardContainer.appendChild(cardDiv);
+  });
+  
