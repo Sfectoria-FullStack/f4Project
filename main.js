@@ -1,17 +1,11 @@
-import photo1 from "./assets/appetizer.webp";
-import photo2 from "./assets/BBQ-Pizza.png";
-import photo3 from "./assets/breakfast.jpg";
-import photo4 from "./assets/Cesar Salad.jpeg";
-import photo5 from "./assets/Cherry-Berry Smoothie Bowl.jpg";
-import photo6 from "./assets/Chocolate Chip Cookie.jpg";
 
 const cardData = [
-  { photo: photo1, blog: "This is blog content 1" },
-  { photo: photo2, blog: "This is blog content 2" },
-  { photo: photo3, blog: "This is blog content 3" },
-  { photo: photo4, blog: "This is blog content 4" },
-  { photo: photo5, blog: "This is blog content 5" },
-  { photo: photo6, blog: "This is blog content 6" },
+  { photo: "./assets/appetizer.webp", blog: "This is blog content 1" },
+  { photo: "./assets/BBQ-Pizza.png", blog: "This is blog content 2" },
+  { photo: "./assets/breakfast.jpg", blog: "This is blog content 3" },
+  { photo: "./assets/Cesar Salad.jpeg", blog: "This is blog content 4" },
+  { photo: "./assets/Cherry-Berry Smoothie Bowl.jpg", blog: "This is blog content 5" },
+  { photo: "./assets/Chocolate Chip Cookie.jpg", blog: "This is blog content 6" },
 ];
 
 // JavaScript code to create cards...
@@ -29,7 +23,7 @@ const cardData = [
     
     // Create the inner HTML for each card
     cardDiv.innerHTML = `
-      <img src="${card.photo}" class="card-img-top" alt="...">
+      <img src="${card.photo}" class="card-img-top"  style="height: 200px; width: 286px; object-fit: cover;" alt="...">
       <div class="card-body">
         <p class="card-text">${card.blog}</p>
       </div>

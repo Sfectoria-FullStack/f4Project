@@ -132,10 +132,10 @@
   max-width: 700px;
 }
 .comments{
-  width: 1000px
+  width: 700px
 }
 .rght{
-  margin-left: 250px;
+  margin-left: 0px;
 }
 .Instructions{
   font-size: 1.25rem
@@ -153,13 +153,19 @@
   display: block;
 }
 .caards{
-  width: 20rem
+  width: 30rem
 
 }
 .image-cards{
   height: 200px; 
   width: 319px
 
+}
+.categorie1{
+  display: flex;
+}
+.categorie2{
+  display: flex;
 }
 @media (max-width: 600px) {
     .text-custom {
@@ -203,11 +209,17 @@
       display: none; 
   }
   .caards{
-    width: 20rem
+    width: 10rem
   
   }
   .image-cards{
-    height: 200px; 
-    width: 319px
+    height: 100px; 
+    width: 100px
 }
+  .categorie1{
+
+  }
+  .categorie2{
+
+  }
 } 
